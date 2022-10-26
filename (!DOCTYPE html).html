@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mengubah Teks</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .header{
+            color: white;
+            background-color: rgb(139, 139, 154);
+            margin-top: 4px;
+            padding: 2rem 0rem 2rem 0rem; 
+            justify-content: center;
+            display: flex;
+        }
+        h3 {
+            margin-left: 7px;
+        }
+        input {
+            margin-left: 7px;
+            margin-bottom: 7px;
+        }
+        button {
+            margin-left: 7px;
+            margin-top: 7px;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="header" id="teks">Website Kosong</h2>
+    <h3>Input Username</h3>
+    <input type="text"><br>
+    <h3>Input Pssword</h3>
+    <input type="password"><br>
+    <button type="submit" id="click">Masuk</button>
+</body>
+<script>
+    var tombol = document.getElementById("click")
+
+    function UbahTeks() {
+        document.getElementById("teks").innerText = "AWebnda Telah Masuk "
+    }
+
+    tombol.addEventListener("click", UbahTeks)
+</script>
+</html>
